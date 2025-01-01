@@ -1,0 +1,63 @@
+-Penjelasan Program Manajemen Inventaris Sederhana
+Program Manajemen Inventaris Sederhana yang dibuat menggunakan C++ bertujuan untuk memantau, mengelola, dan mengupdate jumlah barang yang ada di dalam inventaris pabrik. Program ini memungkinkan pengguna untuk melakukan operasi penambahan, pengurangan, dan penampilan data barang di inventaris. Program ini dapat berguna untuk pengelolaan stok barang di pabrik agar produksi berjalan dengan lancar.
+
+-Struktur Program
+Program ini dibangun dengan struktur dasar berikut:
+
+1. Struct Barang:
+> Tipe data struct digunakan untuk mendefinisikan informasi terkait barang dalam inventaris.
+> Atribut nama: Menyimpan nama barang, misalnya "Kapas", "Benang".
+> Atribut jumlah: Menyimpan jumlah stok barang yang tersedia di inventaris. Ini adalah data utama yang akan dimanipulasi.
+2. Fungsi tambahBarang:
+> Fungsi ini digunakan untuk menambah jumlah barang pada inventaris.
+> Parameter yang diterima adalah objek Barang yang akan dimodifikasi dan jumlah yang ingin ditambahkan ke stok barang.
+> Stok barang akan ditambahkan sesuai dengan jumlah yang dimasukkan.
+3. Fungsi kurangiBarang:
+> Fungsi ini digunakan untuk mengurangi jumlah barang di inventaris.
+> Parameter yang diterima adalah objek Barang dan jumlah yang ingin dikurangi.
+> Fungsi ini juga memeriksa apakah stok barang mencukupi untuk pengurangan. Jika tidak, akan muncul pesan peringatan.
+4. Fungsi tampilkanInventaris:
+> Fungsi ini digunakan untuk menampilkan data barang di inventaris.
+> Menampilkan nama barang dan jumlah yang ada dalam inventaris.
+5. Fungsi main:
+> Fungsi utama di mana program dieksekusi. Di sini, program menyediakan menu untuk pengguna untuk memilih operasi yang ingin dilakukan, seperti menampilkan inventaris, menambah stok barang, mengurangi stok barang, atau keluar.
+> Program ini mendefinisikan dua barang untuk manajemen inventaris: barang1 (Kapas) dan barang2 (Benang).
+> Menggunakan perulangan untuk menampilkan menu dan mengambil input dari pengguna hingga pengguna memilih untuk keluar.
+
+-Penjelasan Alur Program
+1. Inisialisasi Barang:
+> Di dalam fungsi main, dua objek Barang dibuat, yaitu barang1 (dengan nama "Kapas" dan jumlah stok 100) dan barang2 (dengan nama "Benang" dan jumlah stok 50).
+
+2. Menu Pilihan:
+> Program menampilkan menu untuk memilih aksi yang diinginkan:
+a. Tampilkan Inventaris: Menampilkan jumlah barang yang ada untuk setiap barang.
+b. Tambah Barang: Mengubah jumlah stok barang yang ada dengan menambahkannya.
+c. Kurangi Barang: Mengurangi jumlah stok barang jika stok mencukupi.
+d. Keluar: Keluar dari program.
+
+3. Tampil Inventaris:
+> Jika pengguna memilih opsi 1 (Tampilkan Inventaris), maka fungsi tampilkanInventaris akan dipanggil untuk menampilkan stok barang yang ada di inventaris.
+
+4. Tambah Barang:
+> Jika pengguna memilih opsi 2 (Tambah Barang), program akan meminta jumlah barang yang ingin ditambahkan, dan kemudian fungsi tambahBarang akan menambahkan jumlah tersebut ke stok barang yang sesuai.
+
+5. Kurangi Barang:
+> Jika pengguna memilih opsi 3 (Kurangi Barang), program akan meminta jumlah barang yang ingin dikurangi dan memeriksa apakah stok mencukupi. Jika mencukupi, jumlah barang akan dikurangi dengan memanggil fungsi kurangiBarang.
+
+6. Keluar:
+> Jika pengguna memilih opsi 4, maka program akan berhenti dan keluar.
+
+-Keuntungan Program
+> Sederhana dan Mudah Dipahami: Program ini menggunakan konsep dasar struktur data (struct) dan pengelolaan input/output dengan cara yang mudah dipahami.
+> Mengurangi Kesalahan Manusia: Dengan adanya fitur untuk menambah dan mengurangi stok secara otomatis, kemungkinan kesalahan dalam pencatatan inventaris dapat diminimalisir.
+> Dapat Dikembangkan: Program ini cukup fleksibel dan dapat dikembangkan lebih lanjut, misalnya dengan menambahkan lebih banyak barang, menyimpan data inventaris ke file, atau menambahkan fitur laporan.
+
+-Potensi Pengembangan
+Program ini sangat sederhana dan dapat dikembangkan lebih lanjut dengan fitur-fitur berikut:
+
+> Simpan Data ke File: Agar data inventaris tetap tersimpan setelah program ditutup, bisa ditambahkan fungsi untuk menyimpan data ke file teks atau database.
+> Menambah Kategori Barang: Menambahkan kategori atau jenis barang untuk memudahkan pencarian dan pengelompokkan barang.
+> Interface Grafis: Untuk aplikasi pabrik yang lebih besar, program ini bisa dikembangkan menjadi aplikasi desktop dengan antarmuka grafis (GUI) menggunakan framework seperti Qt atau wxWidgets.
+
+Kesimpulan
+Program Manajemen Inventaris Sederhana ini sangat berguna bagi pabrik-pabrik kecil untuk mengelola stok barang mereka. Dengan struktur yang sederhana, program ini memberikan fungsionalitas dasar yang dapat diperluas untuk memenuhi kebutuhan yang lebih besar dan lebih kompleks.
